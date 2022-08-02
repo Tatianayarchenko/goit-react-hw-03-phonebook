@@ -41,7 +41,7 @@ export class App extends Component {
     )
       ? alert(`${data.name} is already in contacts`)
       : this.setState(prevState => ({
-          contacts: [contact, ...prevState.contacts],
+          contacts: [...prevState.contacts, contact],
         }));
   };
 
